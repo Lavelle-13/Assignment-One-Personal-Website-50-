@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui/dist/semantic.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>My top artists on spotify</h1>
+</header>
+
+<div class="ui menu">
+  <a class="item" href="index.html">Home</a>
+  <a class="item" href="aboutMe.html">About</a>
+  <a class="item" href="contact.html">Contact</a>
+  <a class="item" href="form.html">Form</a>
+  <a class="item" href="movies.html">Movies</a>
+  <a class="item active" href="spotify.html">Spotify</a>
+</div>
+
+<main>
+  <h2>Favourite Artists and Current Projects</h2>
+
+  <div class="ui two column grid container">
+
+
+<div class="column">
+  <h3>Favourite Artists</h3>
+  <table class="ui celled table">
+    <thead>
+      <tr><th>Artist</th><th>Song</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Within Temptation</td><td>Faster</td></tr>
+      <tr><td>PinkPanthress</td><td>Stateside</td></tr>
+      <tr><td>FlyLeaf</td><td>All around me</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="column">
+  <h3>Projects 2025</h3>
+  <div class="ui accordion">
+    <div class="title"><i class="dropdown icon"></i>WebDev project</div>
+    <div class="content"><p>My web development site is a showcase of creativity and technical skill,
+       blending clean, modern design with intuitive functionality. It highlights my projects, coding expertise,
+        and passion for building websites that are both visually engaging and highly usable. Visitors can explore my portfolio,
+         learn about my skills, and get a sense of my approach.</p></div>
+
+    <div class="title"><i class="dropdown icon"></i>Programming Project</div>
+    <div class="content"><p>For my first-year Java project, I developed a library management system that allows users to catalog,
+       search, and manage books efficiently. The project focused on core Java concepts like object-oriented programming, file handling,
+        and data structures, giving me practical experience in designing functional, user-friendly software. It was a great introduction
+         to programming real-world applications and problem-solving in Java</p></div>
+  </div>
+</div>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; My Personal Website</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui/dist/semantic.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('.ui.accordion').accordion();
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .form-container label {
+      font-weight: bold;
+    }
+
+    .form-container input,
+    .form-container select,
+    .form-container textarea {
+      padding: 8px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Form Part 2</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aboutMe.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="form.html">Form</a>
+    <a href="movies.html">movies</a>
+    <a href="spotify.html">Spotify</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Please Fill Out This Very Important Form</h2>
+
+  <form class="form-container">
+    <label>Name:</label>
+    <input type="text" required pattern="[A-Za-z ]+" title="Letters only">
+
+    <label>Age:</label>
+    <input type="number" required min="1" max="120">
+
+    <label>How Amazing is my website:</label>
+    <select required>
+      <option value="">Please choose one…</option>
+      <option>Kinda amazing</option>
+      <option>Very amazing</option>
+      <option>Absolutley fantasticaly amazing!!!</option>
+    </select>
+
+    <label>Please Choose one option below:</label>
+    <input type="radio" name="choice" required> Lyons Tea
+    <input type="radio" name="choice"> Barrys Tea
+
+    <label>
+      <input type="checkbox" required>
+      I agree to the terms.
+    </label>
+
+    <textarea placeholder="Message…" rows="5" required></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</main>
+
+<footer>
+  <p>&copy; My Personal Website</p>
+</footer>
+
+</body>
+</html>
